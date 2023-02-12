@@ -1,0 +1,14 @@
+<header>
+
+<div class="container"></div>
+<div class="menu-container" clickOutside (clickOutside)="ClickedOutside()">
+    <div class="menu-toggler"(click)="toggleMenu()">Menu</div>
+  <div class="menu" *ngIf="isMenuOpened">
+  <div class="menu-item"  routerLink="/pocetna">Katalog usluga</div>
+ 
+  </div>
+  </div>
+
+</header>
+
+    

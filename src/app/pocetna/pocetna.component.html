@@ -1,0 +1,37 @@
+<app-search></app-search>
+<ul>
+  <li *ngFor="let usluga of usluge">
+  <a>
+  <img src="{{usluga.slika}}" alt="">
+  
+  <div class="content">
+    <div class="naslov">{{usluga.naslov}}</div>
+    <span class="zakazan {{usluga.zakazan?'':'not'}}">
+      ❤
+      </span>
+
+      <div class="product-item-footer">
+      <div class="cene">
+        <span *ngFor="let cena of usluga.cena">
+        {{cena}}
+      </span>
+       </div>
+    
+      <ng-container *ngIf="visible">
+    <div class="opisKlik">
+      <h4>Detaljni opis usluge</h4>
+    <p clsss="opis">{{usluga.opis}}</p>
+    </div>
+    </ng-container>
+    
+  
+      <button (click)="onClick()" type="button">
+        {{ProcitajVise? "Procitaj vise":"Sakrij"}}
+      </button>
+      
+    </div>
+      </div>
+       </a>
+     </li>
+       </ul>
+  <app-tagovi></app-tagovi>

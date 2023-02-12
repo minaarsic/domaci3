@@ -3,18 +3,30 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UslugeComponent } from './usluge/usluge.component';
-import { ClickOutsideDirectiveDirective } from './click-outside.directive.directive';
+
+import { ClickOutsideDirectiveDirective } from './header/click-outside.directive.directive';
+import { PocetnaComponent } from './pocetna/pocetna.component';
+import { HeaderComponent } from './header/header.component';
+import { TagoviComponent } from './tagovi/tagovi.component';
+import { FormsModule } from '@angular/forms';
+import { SearchComponent } from './search/search.component';
+import { Tag } from './Tag';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UslugeComponent,
-    ClickOutsideDirectiveDirective
+    ClickOutsideDirectiveDirective,
+    PocetnaComponent,
+    HeaderComponent,
+    TagoviComponent,
+    SearchComponent, 
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, 
+    FormsModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

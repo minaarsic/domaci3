@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Usluga } from './usluga';
 
 @Component({
   selector: 'app-root', 
@@ -7,16 +8,7 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  title = 'salon';
-  naslov='Katalog usluga';
-  isMenuOpened: boolean=false;
 
-  toggleMenu(): void
-{
-  this.isMenuOpened=!this.isMenuOpened;
-}
-ClickedOutside():void{
-  this.isMenuOpened=false;
-}
+
 }
 

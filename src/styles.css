@@ -1,23 +1,2 @@
 /* You can add global styles to this file, and also import other style files */
-.menu-container{
-    width: 200px;
-    background: #a37373;
-    font-size: 20px;
-    color: #3b3333;
 
-}
-.menu-toggler{
-    padding: 10px;
-}
-.menu{
-    background: #cdbfbf;
-    color: #3b3333;
-    padding: 10px;
-}
-.menu-item{
-    cursor: pointer;
-    padding: 5px 0;
-}
-.menu-item:hover{
-    text-decoration: underline;
-}

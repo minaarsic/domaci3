@@ -1,0 +1,38 @@
+header{
+    background: rgb(154, 128, 135);
+    padding: 0;
+    border-bottom: 2px;
+   
+ 
+  }
+  .container{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .menu-container{
+    width: 200px;
+    background: #e0d6d6;
+    font-size: 20px;
+    color: #3b3333;
+
+}
+.menu-toggler{
+    padding: 10px;
+    display: block;
+}
+.menu{
+    background: #cdbfbf;
+    color: #3b3333;
+    padding: 10px;
+}
+.menu-item{
+    cursor: pointer;
+    padding: 5px 0;
+}
+.menu-item:hover{
+    text-decoration: underline;
+}
+
+  

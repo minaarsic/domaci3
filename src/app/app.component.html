@@ -1,13 +1,4 @@
-<div class="menu-container" clickOutside (clickOutside)="ClickedOutside()">
-  <div class="menu-toggler"(click)="toggleMenu()">Menu</div>
-<div class="menu" *ngIf="isMenuOpened">
-<div class="menu-item">Katalog usluga</div>
-<div class="menu-item">Zakazane usluge</div>
-</div>
-</div>
+<app-header></app-header>
+<router-outlet></router-outlet>
 
 
-<div>
-  <h1 class="display-2 text-center">{{naslov}}</h1>
-</div>
-<app-usluge></app-usluge>

@@ -1,0 +1,5 @@
+<div *ngIf="tagovi">
+    <a *ngFor="let tag of tagovi" routerLink="/tag/{{tag.ime}}">
+      {{tag.ime}} 
+    </a>
+  </div>
