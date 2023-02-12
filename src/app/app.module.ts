@@ -12,6 +12,8 @@ import { FormsModule } from '@angular/forms';
 import { SearchComponent } from './search/search.component';
 import { Tag } from './Tag';
 
+import { ZakazaniComponent } from './zakazani/zakazani.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +21,9 @@ import { Tag } from './Tag';
     PocetnaComponent,
     HeaderComponent,
     TagoviComponent,
-    SearchComponent, 
+    SearchComponent,
+   
+    ZakazaniComponent, 
     
   ],
   imports: [

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { UslugeService } from '../servisi/usluge.service';
 import { Usluga } from '../usluga';
 import { ActivatedRoute } from '@angular/router';
@@ -18,6 +18,7 @@ export class PocetnaComponent  implements OnInit{
   constructor(private uslugeServis:UslugeService,private route:ActivatedRoute){}
 
   ngOnInit(): void {
+    //za prikaz usluga--pretraga--tagovi--sve
     this.route.params.subscribe(params=>{
       if(params['searchTerm'])
         this.usluge=this.uslugeServis.getAllUslugeBySearchTerm(params['searchTerm']);
@@ -29,6 +30,7 @@ export class PocetnaComponent  implements OnInit{
     })
 
   }
+  //klikom na dugme dobijamo detaljan opis ili ga sakrivamo 
   onClick(){
     this.ProcitajVise=!this.ProcitajVise;
     this.visible=!this.visible ;

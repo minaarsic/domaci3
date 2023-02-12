@@ -4,9 +4,9 @@ div{
     justify-content: center;
   }
   div a{
-    background-color: blanchedalmond;
+    background-color: rgb(202, 176, 183);
     padding: .3rem 1rem;
     margin: .2rem .15rem;
-    border-radius: 10rem;
-    font-weight: 600;
+  
+
   }

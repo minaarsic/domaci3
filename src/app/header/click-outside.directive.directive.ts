@@ -12,7 +12,9 @@ import  {filter, fromEvent, Subscription} from "rxjs";
   selector: '[clickOutside]'
 })
 export class ClickOutsideDirectiveDirective implements AfterViewInit,  OnDestroy {
- @Output() clickOutside=new EventEmitter<void>();
+ //reaktivni meni
+ 
+  @Output() clickOutside=new EventEmitter<void>();
   documentClickSubscription: Subscription | undefined;
  
  constructor(private element: ElementRef, 

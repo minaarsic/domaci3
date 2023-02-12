@@ -1,37 +1,50 @@
 <app-search></app-search>
+<h1 class="h">Katalog usluga</h1>
 <ul>
   <li *ngFor="let usluga of usluge">
   <a>
-  <img src="{{usluga.slika}}" alt="">
+  <img class="slika" src="{{usluga.slika}}" alt="">
   
   <div class="content">
-    <div class="naslov">{{usluga.naslov}}</div>
+    <h1 class="naslov">{{usluga.naslov}}</h1>
+  
     <span class="zakazan {{usluga.zakazan?'':'not'}}">
-      ❤
+      <i class="material-icons">&#xe86c;</i>    
       </span>
 
-      <div class="product-item-footer">
-      <div class="cene">
-        <span *ngFor="let cena of usluga.cena">
-        {{cena}}
-      </span>
-       </div>
-    
-      <ng-container *ngIf="visible">
-    <div class="opisKlik">
-      <h4>Detaljni opis usluge</h4>
-    <p clsss="opis">{{usluga.opis}}</p>
-    </div>
-    </ng-container>
-    
-  
-      <button (click)="onClick()" type="button">
-        {{ProcitajVise? "Procitaj vise":"Sakrij"}}
-      </button>
+      <div class="usluga-cene">
       
-    </div>
-      </div>
+        <h4>Cena usluge:</h4>
+          <div class="cene">
+        <span *ngFor="let cena of usluga.cena">
+          
+        {{cena}}
+          </span>
+       </div>
+       <div class="usluge-duzina">
+        <div class="duzina">
+        <span *ngFor="let duzina of usluga.duzina">
+          {{duzina | uppercase}}
+        </span>
+</div>
+</div>
+       
+          <ng-container *ngIf="visible">
+           <div class="opisKlik">
+          <h4>Detaljniji opis usluge</h4>
+         <p clsss="opis">{{usluga.opis}}</p>
+          </div>
+          </ng-container>
+  
+        </div>
+   
+       </div>
+
        </a>
-     </li>
+       </li>
+
+     <button class="btn" (click)="onClick()" type="button">
+      {{ProcitajVise? "Prikazi opis":"Sakrij"}}
+    </button>
        </ul>
   <app-tagovi></app-tagovi>
